@@ -1,0 +1,261 @@
+[
+  {
+    "name": "Ministro Pistarini",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "iata_code": "EZE",
+    "id": "3988"
+  },
+  {
+    "name": "Aeroparque Jorge Newbery",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "iata_code": "AEP",
+    "id": "2442"
+  },
+  {
+    "name": "El Palomar",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "iata_code": "EPA",
+    "id": "8888"
+  },
+  {
+    "name": "Ambrosio L V Taravella",
+    "city": "Cordoba",
+    "country": "Argentina",
+    "iata_code": "COR",
+    "id": "2443"
+  },
+  {
+    "name": "El Plumerillo",
+    "city": "Mendoza",
+    "country": "Argentina",
+    "iata_code": "MDZ",
+    "id": "2452"
+  },
+  {
+    "name": "San Carlos De Bariloche",
+    "city": "San Carlos De Bariloche",
+    "country": "Argentina",
+    "iata_code": "BRC",
+    "id": "2513"
+  },
+  {
+    "name": "Comodoro Rivadavia",
+    "city": "Comodoro Rivadavia",
+    "country": "Argentina",
+    "iata_code": "CRD",
+    "id": "2487"
+  },
+  {
+    "name": "Rosario",
+    "city": "Rosario",
+    "country": "Argentina",
+    "iata_code": "ROS",
+    "id": "2440"
+  },
+  {
+    "name": "Presidente Peron",
+    "city": "Neuquen",
+    "country": "Argentina",
+    "iata_code": "NQN",
+    "id": "2509"
+  },
+  {
+    "name": "Salta",
+    "city": "Salta",
+    "country": "Argentina",
+    "iata_code": "SLA",
+    "id": "2476"
+  },
+  {
+    "name": "Rio Gallegos",
+    "city": "Rio Gallegos",
+    "country": "Argentina",
+    "iata_code": "RGL",
+    "id": "2496"
+  },
+  {
+    "name": "Almirante Zar",
+    "city": "Trelew",
+    "country": "Argentina",
+    "iata_code": "REL",
+    "id": "2490"
+  },
+  {
+    "name": "Ushuaia Malvinas Argentinas",
+    "city": "Ushuaia",
+    "country": "Argentina",
+    "iata_code": "USH",
+    "id": "2497"
+  },
+  {
+    "name": "El Calafate",
+    "city": "El Calafate",
+    "country": "Argentina",
+    "iata_code": "FTE",
+    "id": "4061"
+  },
+  {
+    "name": "Comandante Espora",
+    "city": "Bahia Blanca",
+    "country": "Argentina",
+    "iata_code": "BHI",
+    "id": "2501"
+  },
+  {
+    "name": "Cataratas Del Iguazu",
+    "city": "Iguazu Falls",
+    "country": "Argentina",
+    "iata_code": "IGR",
+    "id": "2471"
+  },
+  {
+    "name": "Mar Del Plata",
+    "city": "Mar Del Plata",
+    "country": "Argentina",
+    "iata_code": "MDQ",
+    "id": "2508"
+  },
+  {
+    "name": "Esquel",
+    "city": "Esquel",
+    "country": "Argentina",
+    "iata_code": "EQS",
+    "id": "2488"
+  },
+  {
+    "name": "Rio Grande",
+    "city": "Rio Grande",
+    "country": "Argentina",
+    "iata_code": "RGA",
+    "id": "2495"
+  },
+  {
+    "name": "Jujuy",
+    "city": "Jujuy",
+    "country": "Argentina",
+    "iata_code": "JUJ",
+    "id": "2477"
+  },
+  {
+    "name": "San Juan",
+    "city": "San Julian",
+    "country": "Argentina",
+    "iata_code": "UAQ",
+    "id": "2461"
+  },
+  {
+    "name": "Teniente Benjamin Matienzo",
+    "city": "Tucuman",
+    "country": "Argentina",
+    "iata_code": "TUC",
+    "id": "2460"
+  },
+  {
+    "name": "San Rafael",
+    "city": "San Rafael",
+    "country": "Argentina",
+    "iata_code": "AFA",
+    "id": "2454"
+  },
+  {
+    "name": "Sauce Viejo",
+    "city": "Santa Fe",
+    "country": "Argentina",
+    "iata_code": "SFN",
+    "id": "2441"
+  },
+  {
+    "name": "General Urquiza",
+    "city": "Parana",
+    "country": "Argentina",
+    "iata_code": "PRA",
+    "id": "2439"
+  },
+  {
+    "name": "San Luis",
+    "city": "San Luis",
+    "country": "Argentina",
+    "iata_code": "LUQ",
+    "id": "2467"
+  },
+  {
+    "name": "Termal",
+    "city": "Rio Hondo",
+    "country": "Argentina",
+    "iata_code": "RHD",
+    "id": "8914"
+  },
+  {
+    "name": "Aviador C Campos",
+    "city": "San Martin Des Andes",
+    "country": "Argentina",
+    "iata_code": "CPC",
+    "id": "2517"
+  },
+  {
+    "name": "Santa Rosa",
+    "city": "Santa Rosa",
+    "country": "Argentina",
+    "iata_code": "RSA",
+    "id": "2512"
+  },
+  {
+    "name": "El Tehuelche",
+    "city": "Puerto Madryn",
+    "country": "Argentina",
+    "iata_code": "PMY",
+    "id": "2492"
+  },
+  {
+    "name": "Gobernador Castello",
+    "city": "Viedma",
+    "country": "Argentina",
+    "iata_code": "VDM",
+    "id": "2491"
+  },
+  {
+    "name": "Posadas",
+    "city": "Posadas",
+    "country": "Argentina",
+    "iata_code": "PSS",
+    "id": "2474"
+  },
+  {
+    "name": "Formosa",
+    "city": "Formosa",
+    "country": "Argentina",
+    "iata_code": "FMA",
+    "id": "2470"
+  },
+  {
+    "name": "Resistencia",
+    "city": "Resistencia",
+    "country": "Argentina",
+    "iata_code": "RES",
+    "id": "2469"
+  },
+  {
+    "name": "La Rioja",
+    "city": "La Rioja",
+    "country": "Argentina",
+    "iata_code": "IRJ",
+    "id": "2458"
+  },
+  {
+    "name": "Santiago Del Estero",
+    "city": "Santiago Del Estero",
+    "country": "Argentina",
+    "iata_code": "SDE",
+    "id": "2456"
+  },
+  {
+    "name": "Catamarca",
+    "city": "Catamarca",
+    "country": "Argentina",
+    "iata_code": "CTC",
+    "id": "2455"
+  }
+]
