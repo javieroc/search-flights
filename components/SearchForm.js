@@ -13,8 +13,13 @@ class SearchForm extends Component {
 
   async componentDidMount() {
     // To disabled submit button at the beginning.
-    const data = await getAirports('');
-    this.setState({ dataSource: data });
+    const data = await getAirports();
+    this.setState({
+      dataSource: data.map(e => ({
+        value: e.code,
+        text: `${e.name}, ${e.city}, (${e.code})`
+      }))
+    });
     this.props.form.validateFields();
   }
 
@@ -35,7 +40,6 @@ class SearchForm extends Component {
       isFieldTouched
     } = this.props.form;
     const { dataSource } = this.state;
-    console.log(dataSource);
 
     // Only show error after a field is touched.
     const originError = isFieldTouched('origin') && getFieldError('origin');
@@ -51,8 +55,8 @@ class SearchForm extends Component {
             rules: [{ required: true, message: 'Please select origin!' }]
           })(
             <AutoComplete
-              dataSource={['test', 'test2', 'test3']}
-              style={{ width: 200 }}
+              dataSource={dataSource}
+              style={{ width: 400 }}
               placeholder="Origin"
             />
           )}
@@ -63,7 +67,13 @@ class SearchForm extends Component {
         >
           {getFieldDecorator('destination', {
             rules: [{ required: true, message: 'Please select destination!' }]
-          })(<Input placeholder="Destination" />)}
+          })(
+            <AutoComplete
+              dataSource={dataSource}
+              style={{ width: 400 }}
+              placeholder="Destination"
+            />
+          )}
         </Form.Item>
         <Form.Item>
           <Button
