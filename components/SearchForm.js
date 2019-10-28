@@ -1,12 +1,13 @@
-import { Component } from 'react';
+import { connect } from 'react-redux';
 import { Form, Icon, Input, Button, AutoComplete } from 'antd';
-import { getAirports } from '../services/api';
+import { getAirports, getFlights } from '../services/api';
+import { setData } from '../actions';
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
 }
 
-class SearchForm extends Component {
+class SearchForm extends React.Component {
   state = {
     dataSource: []
   };
@@ -25,9 +26,12 @@ class SearchForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    const { dispatch } = this.props;
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        console.log('Received values of form: ', values);
+        const { origin, destination } = values;
+        const { inbound, outbound } = getFlights(origin, destination);
+        dispatch(setData({ inbound, outbound }));
       }
     });
   };
@@ -93,4 +97,4 @@ const WrappedSearchForm = Form.create({ name: 'horizontal_search_form' })(
   SearchForm
 );
 
-export default WrappedSearchForm;
+export default connect()(WrappedSearchForm);

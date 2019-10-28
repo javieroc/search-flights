@@ -1,20 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
+import { connect } from 'react-redux';
 import Layout from '../components/Layout';
 import SearchForm from '../components/SearchForm';
 import FlightList from '../components/FlightList';
 import data1 from '../epa-cor.json';
 import data2 from '../epa-mdz.json';
+import { setData } from '../actions';
 
-export default function Home() {
-  const data = [...data1.flights, ...data2.flights];
+function Home(props) {
+  const { inbound, outbound } = props;
 
   return (
     <Layout title="Antd">
       <div className="main-content">
         <section className="inner-content">
           <SearchForm />
-          <FlightList data={data} />
+          <FlightList title="Inbound Fligths" data={inbound} />
+          <FlightList title="Outbound Flights" data={outbound} />
         </section>
       </div>
       <style jsx>{`
@@ -31,3 +34,17 @@ export default function Home() {
     </Layout>
   );
 }
+
+const mapStateToProps = state => {
+  const { inbound, outbound } = state.flights;
+  return { inbound, outbound };
+};
+
+const mapDispatchToProps = dispatch => ({
+  setData: data => dispatch(setData(data))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Home);
