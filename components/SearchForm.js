@@ -61,6 +61,11 @@ class SearchForm extends React.Component {
               dataSource={dataSource}
               style={{ width: 400 }}
               placeholder="Origin"
+              filterOption={(inputValue, option) =>
+                option.props.children
+                  .toUpperCase()
+                  .indexOf(inputValue.toUpperCase()) !== -1
+              }
             />
           )}
         </Form.Item>
@@ -75,6 +80,11 @@ class SearchForm extends React.Component {
               dataSource={dataSource}
               style={{ width: 400 }}
               placeholder="Destination"
+              filterOption={(inputValue, option) =>
+                option.props.children
+                  .toUpperCase()
+                  .indexOf(inputValue.toUpperCase()) !== -1
+              }
             />
           )}
         </Form.Item>
