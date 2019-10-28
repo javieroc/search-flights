@@ -12,7 +12,6 @@ class SearchForm extends Component {
   };
 
   async componentDidMount() {
-    // To disabled submit button at the beginning.
     const data = await getAirports();
     this.setState({
       dataSource: data.map(e => ({
@@ -20,6 +19,7 @@ class SearchForm extends Component {
         text: `${e.name}, ${e.city}, (${e.code})`
       }))
     });
+    // To disabled submit button at the beginning.
     this.props.form.validateFields();
   }
 
@@ -41,7 +41,6 @@ class SearchForm extends Component {
     } = this.props.form;
     const { dataSource } = this.state;
 
-    // Only show error after a field is touched.
     const originError = isFieldTouched('origin') && getFieldError('origin');
     const destinationError =
       isFieldTouched('destination') && getFieldError('destination');
